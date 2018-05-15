@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+<style>
+h2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position :relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+h1 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    -webkit-transition: width 2s linear 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s linear 1s;
+}
+
+h1:hover {
+    width: 400px;
+}
+body {
+    background-color: black;
+}
+.container {
+  position: absolute;
+  width: 500%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 200%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200%;
+  width: 200%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
+h1 {font-family: 'Frijole', cursive;
+text-align: center;
+color: white;
+}
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Hover, If you Dare</h1>
+<h2>  ↓ ↓ ↓ ↓ ↓ </h2>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="jigsaw.html">Jigsaw</a></li>
+  <li><a href="jason.html">Jason</a></li>
+  <li><a href="sprite.html">Sprite Animation</a></li>
+</ul>
+<div class="container">
+<img src="eye.png" alt="Avatar" class="image" align="middle">
+  <div class="overlay">
+    <img src="jig.jpg" alt="icon" class="image">
+      <i class="fa fa-user"></i>
+    </a>
+  </div>
+</div>
+
+
+</body>
+</html>
